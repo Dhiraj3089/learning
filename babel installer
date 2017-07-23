@@ -1,0 +1,22 @@
+npm install babel-cli babel-register babel-preset-es2015 babel-preset-stage-2 babel-preset-es2017
+
+ 
+/* .babelrc
+ keep this file in root
+ add below json object in .babelrc
+ */
+{
+  "presets": ["es2015","stage-2"],
+  "plugins": ["transform-async-to-generator"]
+
+}
+
+/*
+ create dev folder bin folder in root add dev file and add following commands
+require('babel-register');
+require('babel-polyfill');
+require('./../index');
+
+run command = node bin/index
+
+*/
