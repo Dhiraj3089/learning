@@ -2,7 +2,7 @@ require('babel-register');
 require('babel-polyfill');
 
 import AsyncAwait from './index';
-
+ 
 class AsyncCaller {
 
     async executor() {
